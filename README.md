@@ -25,8 +25,9 @@ Este proyecto utiliza Python y Pandas para analizar un conjunto de datos sobre e
 
 1. Clona este repositorio.
 2. crea el entorno de virtual en Python (opcional pero recomendado):
-   ```python -m venv .venv
-
+   python -m venv .venv
+   ```
+   
 3.  Activa el entorno virtual:
    - En Windows:
      ```
@@ -38,7 +39,9 @@ Este proyecto utiliza Python y Pandas para analizar un conjunto de datos sobre e
      ```
 
 4. Instala las dependencias con:
-   ```pip install -r requirements.txt
+   pip install -r requirements.txt
+   ```
 
 5. Para ejecutar la aplicación:
-   ```streamlit run Inicio.py
+   streamlit run Inicio.py
+   ```
