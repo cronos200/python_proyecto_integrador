@@ -19,12 +19,26 @@ Este proyecto utiliza Python y Pandas para analizar un conjunto de datos sobre e
 
 - Python
 - Pandas
-- Matplotlib / Seaborn
-- Jupyter Notebooks / Streamlit (opcional para visualización interactiva)
+- Streamlit
 
 ## 🚀 Cómo usar
 
 1. Clona este repositorio.
-2. Instala las dependencias con:
-   ```bash
-   pip install pandas matplotlib seaborn
+2. crea el entorno de virtual en Python (opcional pero recomendado):
+   ```python -m venv .venv
+
+3.  Activa el entorno virtual:
+   - En Windows:
+     ```
+     .venv\Scripts\activate
+     ```
+   - En macOS/Linux:
+     ```
+     source .venv/bin/activate
+     ```
+
+4. Instala las dependencias con:
+   ```pip install -r requirements.txt
+
+5. Para ejecutar la aplicación:
+   ```streamlit run Inicio.py
