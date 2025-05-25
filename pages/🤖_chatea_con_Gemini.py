@@ -1,6 +1,5 @@
 import streamlit as st
-import google.generativeai as genai
-
+from google import genai
 
 # Configuración de la página
 st.set_page_config(page_title="Chat sobre Cambio Climático", layout="centered")
