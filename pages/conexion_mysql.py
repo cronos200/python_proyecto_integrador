@@ -17,6 +17,7 @@ engine = create_engine(
     f"mysql+pymysql://{DB_CONFIG['user']}:{DB_CONFIG['password']}@{DB_CONFIG['host']}/{DB_CONFIG['database']}"
 )
 
+
 # Consultas directas con pandas
 df = pd.read_sql("SELECT * FROM countries;", engine)
 df_climaticos = pd.read_sql("SELECT * FROM event_types;", engine)

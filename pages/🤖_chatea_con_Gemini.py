@@ -1,11 +1,15 @@
 import streamlit as st
 from google import genai
+from pages.conexion_mysql import gemmini_IA
+import pandas as pd
+
 
 # Configuración de la página
 st.set_page_config(page_title="Chat sobre Cambio Climático", layout="centered")
 st.title("🌍Chat sobre Cambio Climático con Gemini")
 st.markdown("Pregunta cualquier cosa sobre el cambio climático y obtén respuestas precisas.")
 
+df = pd.DataFrame(gemmini_IA())
 # Interfaz de usuario
 prompt = st.text_input("Haz una pregunta sobre el cambio climático:", placeholder="¿Cómo afecta el CO₂ al calentamiento global?")
 enviar = st.button("Generar Respuesta")
@@ -15,7 +19,7 @@ def generar_respuesta(prompt):
     if not prompt:
         return "Por favor, ingresa una pregunta sobre el cambio climático."
     try:
-        client = genai.Client(api_key="")
+        client = genai.Client(api_key="AIzaSyCpX6SgjzfewPv_vkpaa3iu_KP20D8x0aw")
 
         # Enfoque personalizado
         contexto = (
