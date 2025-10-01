@@ -15,7 +15,7 @@ def generar_respuesta(prompt):
     if not prompt:
         return "Por favor, ingresa una pregunta sobre el cambio climático."
     try:
-        client = genai.Client(api_key="AIzaSyCqKCqmtAmKVObzXcGrCamxE_ORJ788PMs")
+        client = genai.Client(api_key="")
 
         # Enfoque personalizado
         contexto = (
