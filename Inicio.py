@@ -127,9 +127,9 @@ with col1:
 
 # Columna derecha: Información del estudiante
 with col2:
-    st.markdown('<h2 style="color: #0066cc; margin-top: 0px;">Proyecto talento tech</h2>', unsafe_allow_html=True)
+    st.markdown('<h2 style="color: #0066cc; margin-top: 0px;">Proyecto talento tech ETL-G59</h2>', unsafe_allow_html=True)
     st.markdown('<p style="margin-top: 10px;">integrantes: <span style="color: #0066cc; font-weight: bold;">Jhon Jairo Devia Velasco, Juan David Berrio, miguel angel bedolla,Ferney Córdoba, Alegandro londoño, laura</span></p>', unsafe_allow_html=True)
-    st.markdown('<p style="margin-top: 10px;">Nombre del proyecto: <span style="color: #0066cc; font-weight: bold;">vio-ren</span></p>', unsafe_allow_html=True)
+    st.markdown('<p style="margin-top: 10px;">Nombre del proyecto: <span style="color: #0066cc; font-weight: bold;">Bio-rem</span></p>', unsafe_allow_html=True)
     # st.markdown('<p style="margin-top: 10px;">Programa: <span style="color: #0066cc; font-weight: bold;">Desarrollo de Software</span></p>', unsafe_allow_html=True)
     # st.markdown('<p>Semestre: <span style="color: #0066cc; font-weight: bold;">2025-1</span></p>', unsafe_allow_html=True)
     st.markdown('<p>Repositorio: <a href="https://github.com/cronos200/python_proyecto_integrador.git" target="_blank" style="color: #0066cc; font-weight: bold; text-decoration: none;">GitHub</a></p>', unsafe_allow_html=True)
