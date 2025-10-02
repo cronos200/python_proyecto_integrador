@@ -107,6 +107,13 @@ df_resumen4 = pd.read_sql(consulta_4, engine)
 # Liberar conexiones
 engine.dispose()
 
+st.title('Introducción')
+st.text('En las últimas décadas, los efectos del cambio climático y la transición hacia fuentes de energía sostenible se han consolidado como dos de los desafíos más urgentes a nivel global. ' \
+'Fenómenos como huracanes, inundaciones, sequías y olas de calor no solo generan impactos ambientales y sociales, sino que también ocasionan pérdidas económicas considerables que limitan el desarrollo de los países más vulnerables.' \
+'Al mismo tiempo, la transición energética basada en fuentes renovables se perfila como una estrategia clave para reducir las emisiones de gases de efecto invernadero y fortalecer la resiliencia frente a los desastres naturales.' \
+'Sin embargo, el avance de esta transición es desigual, lo que genera riesgos económicos y ambientales diferenciados entre regiones y naciones. ' \
+'Este proyecto se enfoca en 46 países seleccionados, donde se evaluarán de manera comparativa las relaciones entre los impactos económicos de eventos climáticos extremos y el avance en energías sostenibles, usando dos conjuntos de datos:')
+
 # Mostrar tablas en Streamlit
 st.header("Tablas de la base de datos") 
 subtabs = st.tabs([ "Countries", "Event Types", "Event Economics", "Energy Data", "Event Impacts", "Events" ]) 
@@ -118,7 +125,8 @@ with subtabs[4]: st.dataframe(df_impactos)
 with subtabs[5]: st.dataframe(df_eventos)
 
 
-# Mostrar resumen
+st.header('Consultas de la base de datos')
+
 st.subheader("consulta #1 Resumen por País")
 mostrar_codigo = """
 consulta = ""
@@ -139,6 +147,7 @@ df_resumen = pd.read_sql(consulta, engine)
 """
 st.code(mostrar_codigo, language='Python')
 # se muestra la primera consulta
+
 st.dataframe(df_resumen)
 
 
