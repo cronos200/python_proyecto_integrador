@@ -48,20 +48,20 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-# Función para cargar y mostrar el logo SVG
-def get_svg_logo():
-    with open("assets/logo-Cesde-2023.svg", "r") as file:
-        svg_content = file.read()
-    # Ajustar el tamaño del SVG
-    svg_content = svg_content.replace('viewBox="0 0 264 53"', 'viewBox="0 0 264 53" width="300"')
-    return svg_content
+# # Función para cargar y mostrar el logo SVG
+# def get_svg_logo():
+#     with open("assets/logo-Cesde-2023.svg", "r") as file:
+#         svg_content = file.read()
+#     # Ajustar el tamaño del SVG
+#     svg_content = svg_content.replace('viewBox="0 0 264 53"', 'viewBox="0 0 264 53" width="300"')
+#     return svg_content
 
-# Mostrar el logo de CESDE
-st.markdown(f"<div style='text-align: center; margin-bottom: 20px;'>{get_svg_logo()}</div>", unsafe_allow_html=True)
+# # Mostrar el logo de CESDE
+# st.markdown(f"<div style='text-align: center; margin-bottom: 20px;'>{get_svg_logo()}</div>", unsafe_allow_html=True)
 
 # Encabezados
-st.markdown('<h1 class="main-header">Nuevas Tecnologías de Programación</h1>', unsafe_allow_html=True)
-st.markdown('<h2 class="sub-header">Programa de Desarrollo de Software</h2>', unsafe_allow_html=True)
+st.markdown('<h1 class="main-header">Analicis de datos</h1>', unsafe_allow_html=True)
+# st.markdown('<h2 class="sub-header">Programa de Desarrollo de Software</h2>', unsafe_allow_html=True)
 
 # Agregar estilos adicionales para la sección del estudiante
 st.markdown('''
@@ -127,11 +127,11 @@ with col1:
 
 # Columna derecha: Información del estudiante
 with col2:
-    st.markdown('<h2 style="color: #0066cc; margin-top: 0px;">Proyecto integrador</h2>', unsafe_allow_html=True)
-    st.markdown('<p style="margin-top: 10px;">integrantes: <span style="color: #0066cc; font-weight: bold;">Jhon Jairo Devia Velasco, Juan David Berrio y Esteban Gonzalez Ortiz</span></p>', unsafe_allow_html=True)
-    st.markdown('<p style="margin-top: 10px;">Nombre del proyecto: <span style="color: #0066cc; font-weight: bold;">ClimateTravel Analytics</span></p>', unsafe_allow_html=True)
-    st.markdown('<p style="margin-top: 10px;">Programa: <span style="color: #0066cc; font-weight: bold;">Desarrollo de Software</span></p>', unsafe_allow_html=True)
-    st.markdown('<p>Semestre: <span style="color: #0066cc; font-weight: bold;">2025-1</span></p>', unsafe_allow_html=True)
+    st.markdown('<h2 style="color: #0066cc; margin-top: 0px;">Proyecto talento tech</h2>', unsafe_allow_html=True)
+    st.markdown('<p style="margin-top: 10px;">integrantes: <span style="color: #0066cc; font-weight: bold;">Jhon Jairo Devia Velasco, Juan David Berrio, miguel angel bedolla,Ferney Córdoba, Alegandro londoño, laura</span></p>', unsafe_allow_html=True)
+    st.markdown('<p style="margin-top: 10px;">Nombre del proyecto: <span style="color: #0066cc; font-weight: bold;">vio-ren</span></p>', unsafe_allow_html=True)
+    # st.markdown('<p style="margin-top: 10px;">Programa: <span style="color: #0066cc; font-weight: bold;">Desarrollo de Software</span></p>', unsafe_allow_html=True)
+    # st.markdown('<p>Semestre: <span style="color: #0066cc; font-weight: bold;">2025-1</span></p>', unsafe_allow_html=True)
     st.markdown('<p>Repositorio: <a href="https://github.com/cronos200/python_proyecto_integrador.git" target="_blank" style="color: #0066cc; font-weight: bold; text-decoration: none;">GitHub</a></p>', unsafe_allow_html=True)
    
 
