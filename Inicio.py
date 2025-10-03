@@ -60,7 +60,7 @@ st.markdown("""
 # st.markdown(f"<div style='text-align: center; margin-bottom: 20px;'>{get_svg_logo()}</div>", unsafe_allow_html=True)
 
 # Encabezados
-st.markdown('<h1 class="main-header">Analicis de datos</h1>', unsafe_allow_html=True)
+st.markdown('<h1 class="main-header">Análisis de datos</h1>', unsafe_allow_html=True)
 # st.markdown('<h2 class="sub-header">Programa de Desarrollo de Software</h2>', unsafe_allow_html=True)
 
 # Agregar estilos adicionales para la sección del estudiante
